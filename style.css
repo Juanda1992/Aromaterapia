@@ -1,0 +1,367 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: black;
+    overflow-x: hidden;
+    width: 100%;
+}
+
+.paragrahp{
+    color: white;
+}
+
+.strong {
+    color: orange;
+}
+
+.strong2{
+    color: red;
+}
+
+.img1{
+    margin-top: 1em;
+    margin-bottom: 2em;
+}
+
+.paragrahp2{
+    color: white;
+    font-size: 0.8rem;
+}
+
+#video-container {
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding-bottom: 56.25%;
+  /* 16:9 aspect ratio */
+}
+
+#video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+#my-video {
+  max-width: 100%;
+  height: auto;
+}
+
+#custom-progress-bar-container {
+  position: relative;
+  width: 100%;
+  height: 15px;
+  background-color: gray;
+  margin-top: 10px;
+}
+
+#custom-progress-bar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0%;
+  height: 100%;
+  background-color: red;
+}
+
+input[type="file"] {
+  display: none;
+}
+
+.custom-file-upload {
+  display: inline-block;
+  padding: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  background-color: #3498db;
+  color: #fff;
+  border-radius: 5px;
+}
+
+.progress-bar-container {
+  width: 100%;
+  height: 10px;
+  background-color: #ccc;
+}
+
+.progress-bar {
+  width: 0%;
+  height: 100%;
+  background-color: red;
+  transition: width 0.1s linear;
+}
+
+.progress {
+  height: 100%;
+  background-color: transparent;
+}
+
+.fake-progress-bar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 4px;
+  background-color: #f00;
+  z-index: 1;
+  transition: width 0.5s ease-out;
+  max-width: 100%;
+}
+/* FOOTER */
+
+footer{
+    background-color: #0d0f1d;
+}
+
+.paragrahp-footer{
+    color: #484848;
+}
+
+.p-footer{
+    color: #57545c;
+}
+
+.hola{
+    color: white;
+}
+
+.newDiv{
+    border: solid 5px white;
+}
+
+
+.alumno{
+    color: yellow;
+    font-size: 1.2rem;
+    font-weight: bolder;
+}
+
+.ocasion{
+    margin-top: 1.5em;
+    font-weight: bolder;
+}
+
+.divider{
+    width: 20%;
+    margin-left: 40%;
+    margin-right: 40%;
+    margin-bottom: 10px;
+    border: solid 1px white;
+}
+
+.value{
+    font-size: 1.3em;
+    font-weight: bolder;
+}
+
+.value2{
+    margin-top: -20px;
+    font-size: 1.3em;
+    font-weight: bolder;
+    letter-spacing: 1px;
+    position: relative; /* para que los elementos ::before y ::after estén posicionados con respecto al texto */
+    text-decoration: line-through; /* tacha el texto */
+    text-decoration-color: red;
+}
+
+.available{
+    font-weight: 500;
+}
+.button {
+    background-color: #FF005A;
+    border-radius: 30px;
+    display: inline-block;
+    padding: 10px 20px;
+    position: relative;
+    text-align: center;
+    text-transform: uppercase;
+    
+  }
+  
+  .button:before, .button:after {
+    background: linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(0,0,0,0.6) 100%);
+    content: "";
+    height: 50%;
+    position: absolute;
+    width: 100%;
+    z-index: -1;
+  }
+
+  .button a{
+    color: white;
+    font-weight: bold;
+  }
+  
+  .button:before {
+    top: 0;
+    left: 0;
+    transform: skew(15deg) rotate(6deg);
+  }
+  
+  .button:after {
+    bottom: 0;
+    right: 0;
+    transform: skew(-15deg) rotate(-6deg);
+  }
+  
+  .button:hover {
+    animation: shake 0.8s infinite;
+  }
+  
+  @keyframes shake {
+    0% {
+      transform: translateX(0);
+    }
+    10% {
+      transform: translateX(-5px) rotateZ(-3deg);
+    }
+    20% {
+      transform: translateX(3px) rotateZ(2deg);
+    }
+    30% {
+      transform: translateX(-3px) rotateZ(-2deg);
+    }
+    40% {
+      transform: translateX(2px) rotateZ(1deg);
+    }
+    50% {
+      transform: translateX(-1px) rotateZ(-1deg);
+    }
+    60% {
+      transform: translateX(1px) rotateZ(1deg);
+    }
+    70% {
+      transform: translateX(-1px) rotateZ(-1deg);
+    }
+    80% {
+      transform: translateX(1px) rotateZ(1deg);
+    }
+    90% {
+      transform: translateX(-1px) rotateZ(-1deg);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+
+  .button {
+    background-color: #FF005A;
+    border-radius: 10px;
+    display: inline-block;
+    padding: 10px 20px;
+    position: relative;
+    margin-bottom: 2rem;
+    margin-top: 1rem;
+    
+  }
+  
+  .button a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .button::before,
+  .button::after {
+    content: "";
+    background-color: inherit;
+    border-radius: inherit;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    width: 20%;
+    animation: sway 2s infinite ease-in-out;
+  }
+  
+  .button::before {
+    left: 0;
+    transform-origin: 100% 50%;
+  }
+  
+  .button::after {
+    right: 0;
+    transform-origin: 0 50%;
+  }
+  
+  @keyframes sway {
+    0% { transform: rotate(0deg); }
+    10% { transform: rotate(8deg); }
+    20% { transform: rotate(-6deg); }
+    30% { transform: rotate(4deg); }
+    40% { transform: rotate(-3deg); }
+    50% { transform: rotate(2deg); }
+    60% { transform: rotate(-1deg); }
+    70% { transform: rotate(1deg); }
+    80% { transform: rotate(0deg); }
+    100% { transform: rotate(0deg); }
+  }
+  
+.offer{
+    color: red;
+    font-weight: bolder;
+    font-size: 1.6em;
+    text-transform: uppercase;
+}
+
+img.emoji {
+    display: inline !important;
+    border: none !important;
+    box-shadow: none !important;
+    height: 1em !important;
+    width: 1em !important;
+    margin: 0 0.07em !important;
+    vertical-align: -0.1em !important;
+    background: none !important;
+    padding: 0 !important;
+}
+
+.second-div{
+    margin: 0rem 0rem;
+    padding: 3rem 1rem;
+    background-color: #1A1A1A;
+}
+
+.card{
+    background-color: black;
+    border: solid 3px red;
+}
+
+.card-img{
+    background-color: #1A1A1A !important;
+}
+
+.card-text{
+    color: #fff;
+    font-weight: 200;
+}
+
+/* Estilos para pantallas de 300px o más */
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0 auto;
+  max-width: 960px;
+}
+
+.box {
+  background-color: #eee;
+  border: 1px solid #ccc;
+  flex-basis: calc(33.33% - 20px);
+  margin-bottom: 20px;
+  padding: 20px;
+}
+
+/* Estilos para pantallas de menos de 300px */
+@media (max-width: 300px) {
+  body{
+    width: 137% !important;
+  }
+  .box {
+    flex-basis: 100%;
+  }
+}
